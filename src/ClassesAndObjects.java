@@ -2,7 +2,7 @@ public class ClassesAndObjects{
     public static void main(String[] args){
         Person person1 = new Person();
         person1.setName("Какое-то имя");
-        person1.setAge(-12);
+        person1.setAge(12);
         System.out.println
                 ("Выводим значения в main методе: " + person1.getName());
         System.out.println
