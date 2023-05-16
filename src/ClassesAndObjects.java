@@ -18,8 +18,8 @@ class Person{
     private String name;
     private int age;
 
-    public void setName(String userName){
-        if (userName.isEmpty()){
+    public void setName(String userName) {
+        if (userName.isEmpty()) {
             System.out.println("Ты ввел пустое имя.");
         } else {
             name = userName;

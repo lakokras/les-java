@@ -1,11 +1,18 @@
 public class Animal {
+    private int id;
 
-    String name = "Some animal.";
-
-    public void eat(){
-        System.out.println("Animal is eating.");
+    public Animal() {
     }
-    public void sleep(){
-        System.out.println("Animal is sleeping.");
+
+    public Animal(int id) {
+        this.id = id;
+    }
+
+    public void eat() {
+        System.out.println("Animal is eating...");
+    }
+
+    public String toString() {
+        return String.valueOf(id);
     }
 }
