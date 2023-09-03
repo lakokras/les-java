@@ -1,16 +1,23 @@
-interface AbleToEat {
-    public void eat();
-}
-
 public class Test {
     public static void main(String[] args) {
-        AbleToEat ableToEat = new AbleToEat() {
-            @Override
-            public void eat() {
-                System.out.println("Someone is eating...");
-            }
-        };
 
-        ableToEat.eat();
+        AnimalT animal1 = new AnimalT(1);
+        AnimalT animal2 = new AnimalT(2);
+
+        System.out.println(animal1.equals(animal2));
+    }
+}
+
+class AnimalT {
+    private int id;
+
+    public AnimalT(int id) {
+        this.id = id;
+    }
+
+    public boolean equals(Object obj) {
+        AnimalT otherAnimal = (AnimalT) obj;
+
+        return this.id == otherAnimal.id;
     }
 }
