@@ -3,9 +3,10 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.Arrays;
 
+
 public class ReadingFromFile {
     public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("test");
+        File file = new File("/Users/arturchupryna/Documents/les-java/src/test");
 
         Scanner scanner = new Scanner(file);
         String line = scanner.nextLine();
