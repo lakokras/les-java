@@ -1,4 +1,4 @@
-public class Variables {
+public class Variable {
     public static void main(String[] args) {
         int myInt = 557;
         short myShort = 3266;

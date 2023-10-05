@@ -1,6 +1,6 @@
-public class ClassesAndObjects{
+public class ClasseAndObject {
     public static void main(String[] args){
-        PersonCAO person1 = new PersonCAO();
+        PersonST person1 = new PersonST();
         person1.setName("Какое-то имя");
         person1.setAge(12);
         System.out.println
@@ -14,7 +14,7 @@ public class ClassesAndObjects{
 // 1. Данные (поля)
 // 2. Действия, которые он может совершать (методы)
 
-class PersonCAO{
+class PersonST {
     private String name;
     private int age;
 

@@ -1,6 +1,6 @@
 import static java.lang.System.*;
 
-public class Arrays {
+public class Array {
     public static void main (String[] args) {
         int number = 10; // примитивный тип данных     [10]
         int[] numbers = new int[5];// numbers -> [массив] Ссылочный тип данных
@@ -18,7 +18,7 @@ public class Arrays {
     }
 }
 
-class Arrays_of_Strings {
+class Array_of_String {
     public static void main (String[] args) {
         int[] numbers = new int[5];
         numbers [0] = 10;
@@ -47,7 +47,7 @@ class Arrays_of_Strings {
     }
 }
 
-class Multidimensional_arrays {
+class Multidimensional_array {
     public static void main (String[] args) {
         int[] number = {1, 2, 3}; // одномерный массив
 

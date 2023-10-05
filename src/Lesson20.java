@@ -1,4 +1,4 @@
-public class Lessons20 {
+public class Lesson20 {
     public static void main(String[] args) {
         Human h1 = new Human("Bob", 40);
         System.out.println(h1);

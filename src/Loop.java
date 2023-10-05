@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Loops {
+public class Loop {
     public static void main (String[] args) {
         Scanner scanner = new Scanner(System.in);
         int value;
@@ -13,7 +13,7 @@ public class Loops {
     }
 }
 
-class ForLoops {
+class ForLoop {
     public static void main(String[] args) {
         for ( int i = 10; i >= 0; i--) {
             System.out.println("Hello " + i);
@@ -34,7 +34,7 @@ class If {
     }
 }
 
-class WhileLoops {
+class WhileLoop {
     public static void main(String[] args) {
         int value = 0;
         while(value < 5) {
