@@ -10,8 +10,10 @@ public class Fibonacci {
         System.out.println("slow: " + fibNaive(n, mem));
     }
 
-    // простой, с мемоизацией будет довольно быстрее
-    // O(2^n)
+    /**
+     * простой, с мемоизацией будет довольно быстрее
+     * O(2^n)
+     */
     private static long fibNaive(int n, long[] mem) {
         if (mem[n] != -1)
             return mem[n];
@@ -25,8 +27,10 @@ public class Fibonacci {
         return result;
     }
 
-    // более умный, быстрый
-    // O(n)
+    /**
+     * более умный, быстрый
+     * O(n)
+     */
     private static long fibEffective(int n) {
         long[] arr = new long[n + 1];
 
