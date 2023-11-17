@@ -1,23 +1,38 @@
 public class Test {
-    public static void main(String[] args) {
-
-        AnimalT animal1 = new AnimalT(1);
-        AnimalT animal2 = new AnimalT(2);
-
-        System.out.println(animal1.equals(animal2));
+    public static void main(String[] args) throws InterruptedException {
+//        MyThread myThread = new MyThread();
+//        myThread.start();
+//
+//        MyThread myThread2 = new MyThread();
+//        myThread2.start();
+        Thread thread = new Thread(new Runner());
+        thread.start();
+        System.out.println("Hello from main thread");
     }
 }
 
-class AnimalT {
-    private int id;
-
-    public AnimalT(int id) {
-        this.id = id;
+class Runner implements Runnable {
+    public void run() {
+        for (int i = 0; i < 1000; i++) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            System.out.println("Hello from MyRunner" + i);
+        }
     }
+}
 
-    public boolean equals(Object obj) {
-        AnimalT otherAnimal = (AnimalT) obj;
-
-        return this.id == otherAnimal.id;
+class MyThread extends Thread {
+    public void run() {
+        for (int i = 0; i < 1000; i++) {
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            System.out.println("Hello from MyThread" + i);
+        }
     }
 }
